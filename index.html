@@ -1,0 +1,2627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#0a0a0f">
+<meta name="description" content="Kunaal Wachanekar - Human Performance & Transformation Coach. Pioneering Human Evolution through personalized coaching.">
+<title>Kunaal Wachanekar | Human Performance & Transformation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #111118;
+  --bg-tertiary: #1a1a24;
+  --bg-card: #14141c;
+  --bg-glass: rgba(20, 20, 28, 0.85);
+  --accent-primary: #00d4aa;
+  --accent-secondary: #00b894;
+  --accent-glow: rgba(0, 212, 170, 0.15);
+  --accent-warm: #ff6b35;
+  --text-primary: #f0f0f5;
+  --text-secondary: #a0a0b0;
+  --text-muted: #6b6b7b;
+  --border-subtle: rgba(255,255,255,0.06);
+  --border-accent: rgba(0, 212, 170, 0.3);
+  --gradient-hero: linear-gradient(135deg, #0a0a0f 0%, #111118 50%, #0d1f1a 100%);
+  --gradient-card: linear-gradient(145deg, rgba(20,20,28,0.9) 0%, rgba(15,15,22,0.95) 100%);
+  --shadow-glow: 0 0 40px rgba(0, 212, 170, 0.08);
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Space Grotesk', 'Inter', sans-serif;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-tap-highlight-color: transparent; }
+body {
+  font-family: var(--font-primary);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--accent-primary); border-radius: 3px; }
+::selection { background: var(--accent-primary); color: var(--bg-primary); }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes scan {
+  0% { top: 0; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes nodePulse {
+  0%, 100% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.3); opacity: 1; }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  opacity: 0;
+}
+.animate-delay-1 { animation-delay: 0.1s; }
+.animate-delay-2 { animation-delay: 0.2s; }
+.animate-delay-3 { animation-delay: 0.3s; }
+.animate-delay-4 { animation-delay: 0.4s; }
+.animate-delay-5 { animation-delay: 0.5s; }
+
+.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.section { padding: 80px 0; position: relative; }
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+.section-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin-bottom: 48px;
+}
+.text-gradient {
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.label {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent-primary);
+  margin-bottom: 16px;
+  padding: 6px 14px;
+  border: 1px solid var(--border-accent);
+  border-radius: 100px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 28px;
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  color: var(--bg-primary);
+  box-shadow: 0 4px 20px rgba(0, 212, 170, 0.3);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 212, 170, 0.4);
+}
+.btn-secondary {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1.5px solid var(--border-subtle);
+}
+.btn-secondary:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+.btn-whatsapp {
+  background: #25D366;
+  color: white;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+}
+.btn-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+}
+.btn-outline {
+  background: transparent;
+  color: var(--accent-primary);
+  border: 1.5px solid var(--accent-primary);
+}
+.btn-outline:hover {
+  background: var(--accent-primary);
+  color: var(--bg-primary);
+}
+.btn-sm { padding: 10px 20px; font-size: 0.85rem; }
+.btn-lg { padding: 16px 36px; font-size: 1rem; }
+
+.card {
+  background: var(--gradient-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  transition: var(--transition);
+}
+.card:hover {
+  border-color: var(--border-accent);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-4px);
+}
+
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+
+@media (max-width: 1024px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .section { padding: 60px 0; }
+}
+
+/* Navigation */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-subtle);
+  transition: var(--transition);
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.nav-logo {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+.nav-logo span { color: var(--accent-primary); }
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: var(--transition);
+  position: relative;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-primary);
+  transition: var(--transition);
+}
+.nav-links a:hover { color: var(--text-primary); }
+.nav-links a:hover::after { width: 100%; }
+.nav-cta { display: none; }
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 8px;
+  background: none;
+  border: none;
+}
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text-primary);
+  transition: var(--transition);
+}
+
+@media (max-width: 1024px) {
+  .nav-links { display: none; }
+  .nav-cta { display: flex; }
+  .nav-toggle { display: flex; }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 64px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--bg-primary);
+  z-index: 999;
+  padding: 40px 24px;
+  transform: translateX(100%);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
+}
+.mobile-menu.active { transform: translateX(0); }
+.mobile-menu a {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-decoration: none;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.mobile-menu a:hover { color: var(--accent-primary); }
+
+.mobile-bottom-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(10, 10, 15, 0.95);
+  backdrop-filter: blur(20px);
+  border-top: 1px solid var(--border-subtle);
+  padding: 8px 0;
+}
+.mobile-bottom-bar-inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.mobile-bottom-bar a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: var(--transition);
+  padding: 4px 8px;
+}
+.mobile-bottom-bar a svg {
+  width: 22px;
+  height: 22px;
+  stroke: var(--text-muted);
+  transition: var(--transition);
+}
+.mobile-bottom-bar a.active,
+.mobile-bottom-bar a:hover {
+  color: var(--accent-primary);
+}
+.mobile-bottom-bar a.active svg,
+.mobile-bottom-bar a:hover svg {
+  stroke: var(--accent-primary);
+}
+
+@media (max-width: 768px) {
+  .mobile-bottom-bar { display: block; }
+  body { padding-bottom: 70px; }
+}
+
+/* Hero */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: var(--gradient-hero);
+  padding: 100px 20px 60px;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.hero-particles {
+  position: absolute;
+  inset: 0;
+}
+.hero-particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: float 6s ease-in-out infinite;
+}
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0, 212, 170, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 212, 170, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+}
+.hero-scan-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent-primary), transparent);
+  opacity: 0.3;
+  animation: scan 8s linear infinite;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+}
+.hero-label {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent-primary);
+  margin-bottom: 24px;
+  padding: 8px 20px;
+  border: 1px solid var(--border-accent);
+  border-radius: 100px;
+  background: rgba(0, 212, 170, 0.05);
+}
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+.hero-title .line-1 { display: block; }
+.hero-title .line-2 {
+  display: block;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+.hero-supporting {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 40px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.hero-stat {
+  text-align: center;
+}
+.hero-stat-number {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+}
+.hero-stat-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.dna-helix {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  height: 400px;
+  opacity: 0.15;
+  pointer-events: none;
+}
+@media (max-width: 1024px) {
+  .dna-helix { display: none; }
+}
+
+.neural-nodes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.neural-node {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  opacity: 0.2;
+  animation: nodePulse 4s ease-in-out infinite;
+}
+
+/* About */
+.about { background: var(--bg-secondary); }
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.about-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-visual-inner {
+  width: 320px;
+  height: 400px;
+  border-radius: var(--radius-xl);
+  background: linear-gradient(145deg, var(--bg-tertiary), var(--bg-card));
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.about-visual-inner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(0, 212, 170, 0.1), transparent 60%);
+}
+.about-visual-icon {
+  font-size: 5rem;
+  opacity: 0.3;
+}
+.about-visual-ring {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  border: 1px solid var(--border-accent);
+  border-radius: 50%;
+  animation: rotate 30s linear infinite;
+}
+.about-visual-ring-2 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border: 1px dashed var(--border-accent);
+  border-radius: 50%;
+  animation: rotate 40s linear infinite reverse;
+}
+.about-content h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.about-content .role {
+  color: var(--accent-primary);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 24px;
+  display: block;
+}
+.about-content p {
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+}
+.about-highlight {
+  margin-top: 32px;
+  padding: 24px;
+  background: linear-gradient(135deg, rgba(0, 212, 170, 0.08), rgba(0, 184, 148, 0.05));
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-lg);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .about-grid { grid-template-columns: 1fr; gap: 40px; }
+  .about-visual-inner { width: 260px; height: 320px; }
+  .about-visual-ring { width: 300px; height: 300px; }
+  .about-visual-ring-2 { width: 340px; height: 340px; }
+}
+
+/* Method */
+.method { background: var(--bg-primary); }
+.method-stages {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+}
+.method-stage {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 24px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  position: relative;
+  transition: var(--transition);
+}
+.method-stage:last-child { border-bottom: none; }
+.method-stage:hover { background: rgba(0, 212, 170, 0.02); }
+.method-stage-number {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--accent-primary);
+  opacity: 0.3;
+  line-height: 1;
+}
+.method-stage-content h3 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.method-stage-content p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+.method-footer {
+  text-align: center;
+  margin-top: 40px;
+  font-style: italic;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .method-stage { grid-template-columns: 60px 1fr; gap: 16px; padding: 24px 0; }
+  .method-stage-number { font-size: 2rem; }
+}
+
+/* Expertise */
+.expertise { background: var(--bg-secondary); }
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.expertise-card {
+  background: var(--gradient-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.expertise-card:hover {
+  border-color: var(--border-accent);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-4px);
+}
+.expertise-card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  display: block;
+}
+.expertise-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.expertise-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.expertise-card-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+  .expertise-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .expertise-grid { grid-template-columns: 1fr; }
+}
+
+/* Philosophy */
+.philosophy {
+  background: linear-gradient(135deg, var(--bg-primary) 0%, #0d1f1a 100%);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.philosophy::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 212, 170, 0.05), transparent 70%);
+}
+.philosophy .container { position: relative; z-index: 2; }
+.philosophy h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 800;
+  margin-bottom: 24px;
+  line-height: 1.1;
+}
+.philosophy p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  max-width: 700px;
+  margin: 0 auto 32px;
+  line-height: 1.7;
+}
+
+/* Credibility */
+.credibility { background: var(--bg-primary); }
+.credibility-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.credibility-card {
+  background: var(--gradient-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  text-align: center;
+  transition: var(--transition);
+}
+.credibility-card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-4px);
+}
+.credibility-card-number {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--accent-primary);
+  opacity: 0.3;
+  margin-bottom: 16px;
+}
+.credibility-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.credibility-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  .credibility-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .credibility-grid { grid-template-columns: 1fr; }
+}
+
+/* Science */
+.science { background: var(--bg-secondary); }
+.science-visual {
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.science-center {
+  text-align: center;
+  z-index: 2;
+}
+.science-center h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.science-center p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  max-width: 400px;
+}
+.science-nodes {
+  position: absolute;
+  inset: 0;
+}
+.science-node {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition);
+}
+.science-node-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 1px solid var(--border-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 0 20px rgba(0, 212, 170, 0.1);
+}
+.science-node-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  .science-visual { height: 300px; }
+  .science-node-icon { width: 44px; height: 44px; font-size: 1.2rem; }
+}
+
+/* Instagram */
+.instagram { background: var(--bg-primary); }
+.instagram-profile {
+  background: var(--gradient-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+.instagram-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+.instagram-info h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.instagram-info .handle {
+  color: var(--accent-primary);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.instagram-info .bio {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+.instagram-info .buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+.instagram-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.instagram-card {
+  aspect-ratio: 1;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--text-secondary);
+  transition: var(--transition);
+  padding: 20px;
+  text-align: center;
+}
+.instagram-card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+  color: var(--text-primary);
+}
+.instagram-card-icon { font-size: 2rem; }
+.instagram-card-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.instagram-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
+  .instagram-gallery { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .instagram-profile { flex-direction: column; text-align: center; }
+  .instagram-gallery { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+}
+
+/* Assessment */
+.assessment { background: var(--bg-secondary); }
+.assessment-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+.assessment-header {
+  padding: 32px;
+  border-bottom: 1px solid var(--border-subtle);
+  text-align: center;
+}
+.assessment-header h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.assessment-header p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+.assessment-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 32px;
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border-subtle);
+  overflow-x: auto;
+  gap: 8px;
+}
+.assessment-progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  min-width: 50px;
+}
+.assessment-progress-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--bg-tertiary);
+  border: 2px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+.assessment-progress-step.active .assessment-progress-dot {
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+  color: var(--bg-primary);
+}
+.assessment-progress-step.completed .assessment-progress-dot {
+  background: var(--accent-secondary);
+  border-color: var(--accent-secondary);
+  color: var(--bg-primary);
+}
+.assessment-progress-label {
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.assessment-progress-step.active .assessment-progress-label { color: var(--accent-primary); }
+.assessment-progress-line {
+  flex: 1;
+  height: 2px;
+  background: var(--border-subtle);
+  min-width: 10px;
+}
+.assessment-body {
+  padding: 32px;
+  min-height: 400px;
+}
+.assessment-step { display: none; }
+.assessment-step.active { display: block; animation: fadeInUp 0.4s ease; }
+.assessment-step h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.assessment-step h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+.assessment-step p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+.form-group label .required { color: var(--accent-warm); margin-left: 4px; }
+.form-group label .optional {
+  font-weight: 400;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  margin-left: 4px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  background: var(--bg-primary);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--text-muted);
+}
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 640px) {
+  .form-row { grid-template-columns: 1fr; }
+}
+
+.checkbox-group,
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.checkbox-item,
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: var(--bg-primary);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.checkbox-item:hover,
+.radio-item:hover {
+  border-color: var(--border-accent);
+}
+.checkbox-item input,
+.radio-item input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--accent-primary);
+  flex-shrink: 0;
+}
+.checkbox-item span,
+.radio-item span {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+.checkbox-item.selected,
+.radio-item.selected {
+  border-color: var(--accent-primary);
+  background: rgba(0, 212, 170, 0.05);
+}
+.checkbox-item.selected span,
+.radio-item.selected span {
+  color: var(--text-primary);
+}
+
+.slider-container {
+  margin: 20px 0;
+}
+.slider-container input[type="range"] {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--bg-tertiary);
+  outline: none;
+  -webkit-appearance: none;
+}
+.slider-container input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--accent-primary);
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 212, 170, 0.4);
+}
+.slider-value {
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  margin-top: 8px;
+}
+
+.assessment-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px;
+  border-top: 1px solid var(--border-subtle);
+  background: var(--bg-primary);
+  gap: 12px;
+}
+.assessment-footer .btn { flex: 1; }
+
+.assessment-summary {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+.assessment-summary h4 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--accent-primary);
+}
+.assessment-summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.9rem;
+}
+.assessment-summary-item:last-child { border-bottom: none; }
+.assessment-summary-item .key { color: var(--text-secondary); }
+.assessment-summary-item .value { color: var(--text-primary); font-weight: 600; }
+
+.payment-qr {
+  text-align: center;
+  padding: 32px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  margin-bottom: 24px;
+}
+.payment-qr img {
+  max-width: 280px;
+  width: 100%;
+  border-radius: var(--radius-md);
+  margin-bottom: 16px;
+}
+.payment-qr p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+.payment-qr .upi-id {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  margin-bottom: 16px;
+}
+.payment-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+}
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.modal {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  transform: scale(0.95);
+  transition: var(--transition);
+}
+.modal-overlay.active .modal {
+  transform: scale(1);
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.modal-header h3 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.modal-close {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 4px;
+  line-height: 1;
+  transition: var(--transition);
+}
+.modal-close:hover { color: var(--text-primary); }
+.modal-body {
+  padding: 32px;
+}
+.modal-body h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 24px 0 12px;
+  color: var(--accent-primary);
+}
+.modal-body h4:first-child { margin-top: 0; }
+.modal-body p,
+.modal-body li {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+.modal-body ul {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+.modal-body li { margin-bottom: 6px; }
+.modal-footer {
+  display: flex;
+  gap: 12px;
+  padding: 20px 32px;
+  border-top: 1px solid var(--border-subtle);
+  background: var(--bg-primary);
+  flex-wrap: wrap;
+}
+.modal-footer .btn { flex: 1; min-width: 140px; }
+
+/* Contact */
+.contact { background: var(--bg-primary); }
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.contact-card {
+  background: var(--gradient-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  text-align: center;
+  transition: var(--transition);
+}
+.contact-card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-4px);
+}
+.contact-card-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(0, 212, 170, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 1.5rem;
+}
+.contact-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.contact-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+/* Footer */
+.footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-subtle);
+  padding: 48px 0 24px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.footer-brand h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.footer-brand p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.footer-col h4 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+.footer-col a {
+  display: block;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 6px 0;
+  transition: var(--transition);
+}
+.footer-col a:hover { color: var(--accent-primary); }
+.footer-bottom {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.footer-bottom p {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .footer-grid { grid-template-columns: 1fr; }
+}
+
+/* Utilities */
+.hide-mobile { }
+@media (max-width: 768px) {
+  .hide-mobile { display: none !important; }
+}
+.hide-desktop { display: none; }
+@media (max-width: 768px) {
+  .hide-desktop { display: block !important; }
+}
+
+.toast {
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: var(--bg-card);
+  border: 1px solid var(--border-accent);
+  color: var(--text-primary);
+  padding: 14px 28px;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 500;
+  z-index: 3000;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  white-space: nowrap;
+}
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.consent-box {
+  background: rgba(255, 107, 53, 0.05);
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  margin: 20px 0;
+}
+.consent-box label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+.consent-box input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--accent-primary);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.disclaimer {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  padding: 16px;
+  background: var(--bg-primary);
+  border-radius: var(--radius-md);
+  margin-top: 20px;
+  border: 1px solid var(--border-subtle);
+}
+
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-primary);
+  z-index: 5000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  transition: opacity 0.5s ease;
+}
+.loading-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.loading-spinner {
+  width: 48px;
+  height: 48px;
+  border: 3px solid var(--border-subtle);
+  border-top-color: var(--accent-primary);
+  border-radius: 50%;
+  animation: rotate 0.8s linear infinite;
+}
+.loading-text {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+</style>
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div class="loading-overlay" id="loadingOverlay">
+  <div class="loading-spinner"></div>
+  <div class="loading-text">Initializing System</div>
+</div>
+
+<!-- Navigation -->
+<nav class="nav" id="navbar">
+  <div class="nav-container">
+    <a href="#" class="nav-logo">KUNAAL<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#method">Method</a></li>
+      <li><a href="#transformations">Transformations</a></li>
+      <li><a href="#assessment">Assessment</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#assessment" class="btn btn-primary btn-sm nav-cta">Start Assessment</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" onclick="closeMobileMenu()">Home</a>
+  <a href="#about" onclick="closeMobileMenu()">About</a>
+  <a href="#services" onclick="closeMobileMenu()">Services</a>
+  <a href="#method" onclick="closeMobileMenu()">Method</a>
+  <a href="#transformations" onclick="closeMobileMenu()">Transformations</a>
+  <a href="#assessment" onclick="closeMobileMenu()">Assessment</a>
+  <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+  <div style="margin-top: 32px;">
+    <a href="#assessment" class="btn btn-primary" style="width: 100%;" onclick="closeMobileMenu()">Start Assessment</a>
+  </div>
+</div>
+
+<!-- Mobile Bottom Bar -->
+<div class="mobile-bottom-bar">
+  <div class="mobile-bottom-bar-inner">
+    <a href="#home" class="active">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+      Home
+    </a>
+    <a href="#services">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+      Services
+    </a>
+    <a href="#assessment">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+      Assessment
+    </a>
+    <a href="#assessment" onclick="scrollToBooking()">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+      Book
+    </a>
+    <a href="https://wa.me/919011101654" target="_blank">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+      WhatsApp
+    </a>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="hero-grid"></div>
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="hero-scan-line"></div>
+    <div class="neural-nodes" id="neuralNodes"></div>
+    <svg class="dna-helix" viewBox="0 0 200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M100 20 Q150 60 100 100 Q50 140 100 180 Q150 220 100 260 Q50 300 100 340 Q150 380 100 420" stroke="url(#dnaGrad)" stroke-width="2" fill="none" opacity="0.5"/>
+      <path d="M100 20 Q50 60 100 100 Q150 140 100 180 Q50 220 100 260 Q150 300 100 340 Q50 380 100 420" stroke="url(#dnaGrad)" stroke-width="2" fill="none" opacity="0.5"/>
+      <defs>
+        <linearGradient id="dnaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color:#00d4aa;stop-opacity:0" />
+          <stop offset="50%" style="stop-color:#00d4aa;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#00d4aa;stop-opacity:0" />
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+  <div class="hero-content">
+    <div class="hero-label animate-fade-in-up">Human Performance & Transformation</div>
+    <h1 class="hero-title animate-fade-in-up animate-delay-1">
+      <span class="line-1">PIONEERING</span>
+      <span class="line-2">HUMAN EVOLUTION</span>
+    </h1>
+    <p class="hero-subtitle animate-fade-in-up animate-delay-2">"Train the body. Rewire the mind. Build a better human system."</p>
+    <p class="hero-supporting animate-fade-in-up animate-delay-3">Personalized coaching across physique transformation, performance, nutrition, contest preparation, lifestyle and hypnotherapy.</p>
+    <div class="hero-ctas animate-fade-in-up animate-delay-4">
+      <a href="#assessment" class="btn btn-primary btn-lg">Start Your Assessment</a>
+      <a href="#assessment" class="btn btn-secondary btn-lg" onclick="scrollToBooking()">Book a Consultation</a>
+      <a href="https://wa.me/919011101654" target="_blank" class="btn btn-whatsapp btn-lg">WhatsApp Kunaal</a>
+    </div>
+    <div class="hero-stats animate-fade-in-up animate-delay-5">
+      <div class="hero-stat"><div class="hero-stat-number">01</div><div class="hero-stat-label">Assess</div></div>
+      <div class="hero-stat"><div class="hero-stat-number">02</div><div class="hero-stat-label">Engineer</div></div>
+      <div class="hero-stat"><div class="hero-stat-number">03</div><div class="hero-stat-label">Execute</div></div>
+      <div class="hero-stat"><div class="hero-stat-number">04</div><div class="hero-stat-label">Adapt</div></div>
+      <div class="hero-stat"><div class="hero-stat-number">05</div><div class="hero-stat-label">Transform</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="section about" id="about">
+  <div class="container">
+    <span class="label">The Mind Behind The Method</span>
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="about-visual-ring"></div>
+        <div class="about-visual-ring-2"></div>
+        <div class="about-visual-inner">
+          <span class="about-visual-icon">&#x1F9EC;</span>
+        </div>
+      </div>
+      <div class="about-content">
+        <h2>Kunaal Wachanekar</h2>
+        <span class="role">Human Performance & Transformation Coach</span>
+        <p>Kunaal Wachanekar is a human performance and transformation coach working at the intersection of physique development, strength and conditioning, nutrition, lifestyle optimization and behavioural change.</p>
+        <p>His approach goes beyond simply prescribing workouts or diets. Every individual is treated as a complete system — their goals, physiology, training history, lifestyle, nutrition, habits, mindset and environment.</p>
+        <p>The objective is simple: Create measurable physical transformation while developing the behaviours, discipline and mental framework required to sustain it.</p>
+        <p>From personal transformation and physique development to contest preparation, online coaching, nutrition consultation and one-on-one hypnotherapy, Kunaal works with individuals who want more than a temporary result.</p>
+        <p>His philosophy is built around understanding the individual first, then designing the system around them.</p>
+        <div class="about-highlight">
+          "DON'T JUST CHASE A BETTER BODY.<br>BUILD A BETTER HUMAN SYSTEM."
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Method Section -->
+<section class="section method" id="method">
+  <div class="container">
+    <span class="label">The Kunaal Method</span>
+    <h2 class="section-title">A Systematic Approach to<br><span class="text-gradient">Human Evolution</span></h2>
+    <div class="method-stages">
+      <div class="method-stage">
+        <div class="method-stage-number">01</div>
+        <div class="method-stage-content">
+          <h3>ASSESS</h3>
+          <p>Understand where the individual is starting from. Comprehensive evaluation of physiology, history, lifestyle, nutrition, habits, mindset and environment.</p>
+        </div>
+      </div>
+      <div class="method-stage">
+        <div class="method-stage-number">02</div>
+        <div class="method-stage-content">
+          <h3>ENGINEER</h3>
+          <p>Design the training, nutrition, lifestyle and behavioural strategy. Every element is calculated and customized to the individual's unique system.</p>
+        </div>
+      </div>
+      <div class="method-stage">
+        <div class="method-stage-number">03</div>
+        <div class="method-stage-content">
+          <h3>EXECUTE</h3>
+          <p>Build consistency through structured action and accountability. Daily habits, weekly check-ins, and real-time guidance ensure progress.</p>
+        </div>
+      </div>
+      <div class="method-stage">
+        <div class="method-stage-number">04</div>
+        <div class="method-stage-content">
+          <h3>ADAPT</h3>
+          <p>Use feedback, performance and progress to continuously refine the system. What works is amplified; what doesn't is adjusted.</p>
+        </div>
+      </div>
+      <div class="method-stage">
+        <div class="method-stage-number">05</div>
+        <div class="method-stage-content">
+          <h3>TRANSFORM</h3>
+          <p>Create meaningful physical and behavioural change. The result is not just a better body, but a better human system.</p>
+        </div>
+      </div>
+    </div>
+    <div class="method-footer">"Your program should evolve as you do."</div>
+  </div>
+</section>
+
+<!-- Expertise Section -->
+<section class="section expertise" id="services">
+  <div class="container">
+    <span class="label">Areas of Expertise</span>
+    <h2 class="section-title">Specialized Coaching<br><span class="text-gradient">For Every Goal</span></h2>
+    <p class="section-subtitle">Comprehensive services designed around your unique physiology, psychology and objectives.</p>
+    <div class="expertise-grid">
+      <div class="expertise-card" onclick="openServiceModal('physique')">
+        <span class="expertise-card-icon">&#x1F3CB;&#xFE0F;</span>
+        <h3>PHYSIQUE TRANSFORMATION</h3>
+        <p>Body composition, hypertrophy, strength and aesthetic development. Build the physique you have envisioned.</p>
+        <div class="expertise-card-actions">
+          <button class="btn btn-outline btn-sm">Learn More</button>
+          <button class="btn btn-primary btn-sm" onclick="event.stopPropagation(); selectService('physique')">Book Consultation</button>
+        </div>
+      </div>
+      <div class="expertise-card" onclick="openServiceModal('strength')">
+        <span class="expertise-card-icon">&#x26A1;</span>
+        <h3>STRENGTH & CONDITIONING</h3>
+        <p>Structured training for strength, conditioning, movement and performance. Develop real athletic capability.</p>
+        <div class="expertise-card-actions">
+          <button class="btn btn-outline btn-sm">Learn More</button>
+          <button class="btn btn-primary btn-sm" onclick="event.stopPropagation(); selectService('strength')">Book Consultation</button>
+        </div>
+      </div>
+      <div class="expertise-card" onclick="openServiceModal('contest')">
+        <span class="expertise-card-icon">&#x1F3C6;</span>
+        <h3>CONTEST PREPARATION</h3>
+        <p>Structured preparation for physique athletes including training, nutrition, conditioning and presentation.</p>
+        <div class="expertise-card-actions">
+          <button class="btn btn-outline btn-sm">Learn More</button>
+          <button class="btn btn-primary btn-sm" onclick="event.stopPropagation(); selectService('contest')">Book Consultation</button>
+        </div>
+      </div>
+      <div class="expertise-card" onclick="openServiceModal('nutrition')">
+        <span class="expertise-card-icon">&#x1F957;</span>
+        <h3>NUTRITION & LIFESTYLE</h3>
+        <p>Personalized nutrition and lifestyle strategies built around goals, preferences and adherence.</p>
+        <div class="expertise-card-actions">
+          <button class="btn btn-outline btn-sm">Learn More</button>
+          <button class="btn btn-primary btn-sm" onclick="event.stopPropagation(); selectService('nutrition')">Book Consultation</button>
+        </div>
+      </div>
+      <div class="expertise-card" onclick="openServiceModal('hypnotherapy')">
+        <span class="expertise-card-icon">&#x1F9E0;</span>
+        <h3>HYPNOTHERAPY</h3>
+        <p>One-on-one sessions focused on behavioural patterns, habits, confidence, performance and personal change.</p>
+        <div class="expertise-card-actions">
+          <button class="btn btn-outline btn-sm">Learn More</button>
+          <button class="btn btn-primary btn-sm" onclick="event.stopPropagation(); selectService('hypnotherapy')">Book Consultation</button>
+        </div>
+      </div>
+      <div class="expertise-card" onclick="openServiceModal('performance')">
+        <span class="expertise-card-icon">&#x1F9EC;</span>
+        <h3>HUMAN PERFORMANCE</h3>
+        <p>An integrated approach to training, recovery, lifestyle, behaviour and performance optimization.</p>
+        <div class="expertise-card-actions">
+          <button class="btn btn-outline btn-sm">Learn More</button>
+          <button class="btn btn-primary btn-sm" onclick="event.stopPropagation(); selectService('performance')">Book Consultation</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Philosophy Section -->
+<section class="section philosophy" id="philosophy">
+  <div class="container">
+    <h2>NOT A TEMPLATE.<br>A <span class="text-gradient">SYSTEM</span>.</h2>
+    <p>No two people have the same physiology, history, schedule, psychology or environment. That's why coaching begins with assessment rather than assumptions.</p>
+    <p>Training, nutrition, lifestyle and behavioural strategies are designed around the individual rather than forcing the individual into a template.</p>
+    <a href="#assessment" class="btn btn-primary btn-lg" style="margin-top: 16px;">Discover Your Plan</a>
+  </div>
+</section>
+
+<!-- Credibility Section -->
+<section class="section credibility" id="credibility">
+  <div class="container">
+    <span class="label">Why People Work With Kunaal</span>
+    <h2 class="section-title">Built on <span class="text-gradient">Principles</span></h2>
+    <div class="credibility-grid">
+      <div class="credibility-card">
+        <div class="credibility-card-number">01</div>
+        <h3>INDIVIDUALIZED</h3>
+        <p>Every program begins by understanding the individual. No templates. No assumptions.</p>
+      </div>
+      <div class="credibility-card">
+        <div class="credibility-card-number">02</div>
+        <h3>SYSTEMATIC</h3>
+        <p>Training, nutrition, lifestyle and behaviour work together as an integrated system.</p>
+      </div>
+      <div class="credibility-card">
+        <div class="credibility-card-number">03</div>
+        <h3>DATA INFORMED</h3>
+        <p>Progress and feedback guide adjustments. What gets measured gets managed.</p>
+      </div>
+      <div class="credibility-card">
+        <div class="credibility-card-number">04</div>
+        <h3>HUMAN</h3>
+        <p>Technology and science are tools. The individual always comes first.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Science Section -->
+<section class="section science" id="science">
+  <div class="container">
+    <span class="label">The Human System</span>
+    <h2 class="section-title">Performance is Not<br><span class="text-gradient">One Variable</span></h2>
+    <div class="science-visual">
+      <div class="science-center">
+        <h3>The Human System</h3>
+        <p>Performance emerges from the interaction between physiology, behaviour, environment, training, nutrition and recovery.</p>
+      </div>
+      <div class="science-nodes">
+        <div class="science-node" style="top: 10%; left: 20%;">
+          <div class="science-node-icon">&#x1F9E0;</div>
+          <span class="science-node-label">Mind</span>
+        </div>
+        <div class="science-node" style="top: 10%; right: 20%;">
+          <div class="science-node-icon">&#x1F4AA;</div>
+          <span class="science-node-label">Muscle</span>
+        </div>
+        <div class="science-node" style="top: 40%; left: 5%;">
+          <div class="science-node-icon">&#x1FAC0;</div>
+          <span class="science-node-label">Recovery</span>
+        </div>
+        <div class="science-node" style="top: 40%; right: 5%;">
+          <div class="science-node-icon">&#x1F9EC;</div>
+          <span class="science-node-label">Biology</span>
+        </div>
+        <div class="science-node" style="bottom: 10%; left: 20%;">
+          <div class="science-node-icon">&#x1F957;</div>
+          <span class="science-node-label">Nutrition</span>
+        </div>
+        <div class="science-node" style="bottom: 10%; right: 20%;">
+          <div class="science-node-icon">&#x1F634;</div>
+          <span class="science-node-label">Sleep</span>
+        </div>
+        <div class="science-node" style="bottom: 35%; left: 15%;">
+          <div class="science-node-icon">&#x1F3AF;</div>
+          <span class="science-node-label">Behaviour</span>
+        </div>
+        <div class="science-node" style="bottom: 35%; right: 15%;">
+          <div class="science-node-icon">&#x26A1;</div>
+          <span class="science-node-label">Performance</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Instagram / Transformations Section -->
+<section class="section instagram" id="transformations">
+  <div class="container">
+    <span class="label">Real People. Real Journeys.</span>
+    <h2 class="section-title">Explore Real Coaching<br><span class="text-gradient">Journeys</span></h2>
+    <p class="section-subtitle">Genuine transformations, client experiences and behind-the-scenes work. Follow the journey on Instagram.</p>
+
+    <div class="instagram-profile">
+      <div class="instagram-avatar">&#x1F3CB;&#xFE0F;</div>
+      <div class="instagram-info">
+        <h3>Kunaal Wachanekar</h3>
+        <div class="handle">@kunaal_thechamp</div>
+        <div class="bio">Human Performance & Transformation</div>
+        <div class="buttons">
+          <a href="https://www.instagram.com/kunaal_thechamp/" target="_blank" class="btn btn-primary btn-sm">Follow on Instagram</a>
+          <a href="https://www.instagram.com/kunaal_thechamp/" target="_blank" class="btn btn-secondary btn-sm">View Transformations</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="instagram-gallery">
+      <a href="https://www.instagram.com/kunaal_thechamp/" target="_blank" class="instagram-card">
+        <span class="instagram-card-icon">&#x1F3C6;</span>
+        <span class="instagram-card-label">Transformations</span>
+      </a>
+      <a href="https://www.instagram.com/kunaal_thechamp/" target="_blank" class="instagram-card">
+        <span class="instagram-card-icon">&#x1F4AA;</span>
+        <span class="instagram-card-label">Training</span>
+      </a>
+      <a href="https://www.instagram.com/kunaal_thechamp/" target="_blank" class="instagram-card">
+        <span class="instagram-card-icon">&#x1F957;</span>
+        <span class="instagram-card-label">Nutrition</span>
+      </a>
+      <a href="https://www.instagram.com/kunaal_thechamp/" target="_blank" class="instagram-card">
+        <span class="instagram-card-icon">&#x1F9E0;</span>
+        <span class="instagram-card-label">Hypnotherapy</span>
+      </a>
+      <a href="https://www.instagram.com/kunaal_thechamp/" target="_blank" class="instagram-card">
+        <span class="instagram-card-icon">&#x1F3A4;</span>
+        <span class="instagram-card-label">Podcast</span>
+      </a>
+      <a href="https://www.instagram.com/kunaal_thechamp/" target="_blank" class="instagram-card">
+        <span class="instagram-card-icon">&#x1F4DA;</span>
+        <span class="instagram-card-label">Education</span>
+      </a>
+      <a href="https://www.instagram.com/kunaal_thechamp/" target="_blank" class="instagram-card">
+        <span class="instagram-card-icon">&#x26A1;</span>
+        <span class="instagram-card-label">Performance</span>
+      </a>
+      <a href="https://www.instagram.com/kunaal_thechamp/" target="_blank" class="instagram-card">
+        <span class="instagram-card-icon">&#x1F464;</span>
+        <span class="instagram-card-label">Behind The Scenes</span>
+      </a>
+    </div>
+
+    <div class="instagram-cta">
+      <a href="https://www.instagram.com/kunaal_thechamp/" target="_blank" class="btn btn-outline btn-lg">View More on Instagram</a>
+    </div>
+  </div>
+</section>
+
+<!-- Assessment Section -->
+<section class="section assessment" id="assessment">
+  <div class="container">
+    <span class="label">Start Your Journey</span>
+    <h2 class="section-title" style="text-align: center;">Client <span class="text-gradient">Assessment</span></h2>
+    <p class="section-subtitle" style="text-align: center; margin: 0 auto 48px;">Complete this assessment to help design your personalized coaching system.</p>
+
+    <div class="assessment-container">
+      <div class="assessment-header">
+        <h2>Coaching Assessment</h2>
+        <p>Tell us about yourself so we can build the right system for you.</p>
+      </div>
+
+      <div class="assessment-progress" id="assessmentProgress">
+        <div class="assessment-progress-step active" data-step="0">
+          <div class="assessment-progress-dot">1</div>
+          <span class="assessment-progress-label">Identity</span>
+        </div>
+        <div class="assessment-progress-line"></div>
+        <div class="assessment-progress-step" data-step="1">
+          <div class="assessment-progress-dot">2</div>
+          <span class="assessment-progress-label">Body</span>
+        </div>
+        <div class="assessment-progress-line"></div>
+        <div class="assessment-progress-step" data-step="2">
+          <div class="assessment-progress-dot">3</div>
+          <span class="assessment-progress-label">Goals</span>
+        </div>
+        <div class="assessment-progress-line"></div>
+        <div class="assessment-progress-step" data-step="3">
+          <div class="assessment-progress-dot">4</div>
+          <span class="assessment-progress-label">Lifestyle</span>
+        </div>
+        <div class="assessment-progress-line"></div>
+        <div class="assessment-progress-step" data-step="4">
+          <div class="assessment-progress-dot">5</div>
+          <span class="assessment-progress-label">Nutrition</span>
+        </div>
+        <div class="assessment-progress-line"></div>
+        <div class="assessment-progress-step" data-step="5">
+          <div class="assessment-progress-dot">6</div>
+          <span class="assessment-progress-label">Health</span>
+        </div>
+        <div class="assessment-progress-line"></div>
+        <div class="assessment-progress-step" data-step="6">
+          <div class="assessment-progress-dot">7</div>
+          <span class="assessment-progress-label">Service</span>
+        </div>
+        <div class="assessment-progress-line"></div>
+        <div class="assessment-progress-step" data-step="7" id="hypnoStepIndicator" style="display:none;">
+          <div class="assessment-progress-dot">8</div>
+          <span class="assessment-progress-label">Hypno</span>
+        </div>
+        <div class="assessment-progress-line" id="hypnoStepLine" style="display:none;"></div>
+        <div class="assessment-progress-step" data-step="8">
+          <div class="assessment-progress-dot">9</div>
+          <span class="assessment-progress-label">Booking</span>
+        </div>
+        <div class="assessment-progress-line"></div>
+        <div class="assessment-progress-step" data-step="9">
+          <div class="assessment-progress-dot">10</div>
+          <span class="assessment-progress-label">Payment</span>
+        </div>
+      </div>
+
+      <div class="assessment-body" id="assessmentBody">
+
+        <!-- Step 1: Identity -->
+        <div class="assessment-step active" data-step="0">
+          <h3>Personal Details</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name <span class="required">*</span></label>
+              <input type="text" id="fullName" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label>Age <span class="required">*</span></label>
+              <input type="number" id="age" placeholder="Your age" min="16" max="100" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Sex</label>
+              <select id="sex">
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+                <option value="prefer-not">Prefer not to say</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Phone Number <span class="required">*</span></label>
+              <input type="tel" id="phone" placeholder="+91XXXXXXXXXX" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>WhatsApp Number <span class="optional">(optional)</span></label>
+              <input type="tel" id="whatsapp" placeholder="Same as phone if not different">
+            </div>
+            <div class="form-group">
+              <label>Email <span class="required">*</span></label>
+              <input type="email" id="email" placeholder="your@email.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>City / Location <span class="optional">(optional)</span></label>
+            <input type="text" id="location" placeholder="Your city">
+          </div>
+        </div>
+
+        <!-- Step 2: Body -->
+        <div class="assessment-step" data-step="1">
+          <h3>Body Profile</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Height (cm)</label>
+              <input type="number" id="height" placeholder="Height in cm">
+            </div>
+            <div class="form-group">
+              <label>Weight (kg)</label>
+              <input type="number" id="weight" placeholder="Weight in kg">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Body Fat % <span class="optional">(if known)</span></label>
+              <input type="number" id="bodyfat" placeholder="e.g. 15" min="3" max="60">
+            </div>
+            <div class="form-group">
+              <label>Training Experience</label>
+              <select id="trainingExp">
+                <option value="">Select</option>
+                <option value="beginner">Beginner (0-1 year)</option>
+                <option value="intermediate">Intermediate (1-3 years)</option>
+                <option value="advanced">Advanced (3-5 years)</option>
+                <option value="elite">Elite (5+ years)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Years of Training</label>
+            <input type="number" id="yearsTraining" placeholder="e.g. 2" min="0" max="50">
+          </div>
+          <div class="form-group">
+            <label>Current Activity Level</label>
+            <select id="activityLevel">
+              <option value="">Select</option>
+              <option value="sedentary">Sedentary (little to no exercise)</option>
+              <option value="light">Lightly Active (1-2 days/week)</option>
+              <option value="moderate">Moderately Active (3-4 days/week)</option>
+              <option value="very">Very Active (5-6 days/week)</option>
+              <option value="extreme">Extremely Active (daily + physical job)</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Waist Measurement (cm) <span class="optional">(optional)</span></label>
+              <input type="number" id="waist" placeholder="Waist in cm">
+            </div>
+            <div class="form-group">
+              <label>Other Body Measurements <span class="optional">(optional)</span></label>
+              <input type="text" id="measurements" placeholder="Chest, arms, legs, etc.">
+            </div>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 8px;">Progress photographs can be shared later during consultation.</p>
+        </div>
+
+        <!-- Step 3: Goals -->
+        <div class="assessment-step" data-step="2">
+          <h3>Goals & Objectives</h3>
+          <h4>What is your primary goal?</h4>
+          <div class="checkbox-group" id="primaryGoals">
+            <label class="checkbox-item"><input type="checkbox" value="fat-loss"><span>Fat Loss</span></label>
+            <label class="checkbox-item"><input type="checkbox" value="muscle-gain"><span>Muscle Gain</span></label>
+            <label class="checkbox-item"><input type="checkbox" value="recomposition"><span>Body Recomposition</span></label>
+            <label class="checkbox-item"><input type="checkbox" value="strength"><span>Strength</span></label>
+            <label class="checkbox-item"><input type="checkbox" value="athletic"><span>Athletic Performance</span></label>
+            <label class="checkbox-item"><input type="checkbox" value="contest"><span>Contest Preparation</span></label>
+            <label class="checkbox-item"><input type="checkbox" value="fitness"><span>General Fitness</span></label>
+            <label class="checkbox-item"><input type="checkbox" value="lifestyle"><span>Lifestyle Transformation</span></label>
+            <label class="checkbox-item"><input type="checkbox" value="confidence"><span>Confidence</span></label>
+            <label class="checkbox-item"><input type="checkbox" value="habits"><span>Habit Change</span></label>
+            <label class="checkbox-item"><input type="checkbox" value="stress"><span>Stress Management</span></label>
+            <label class="checkbox-item"><input type="checkbox" value="mental"><span>Mental Performance</span></label>
+            <label class="checkbox-item"><input type="checkbox" value="other"><span>Other</span></label>
+          </div>
+          <div class="form-group" style="margin-top: 20px;">
+            <label>What would you like to achieve?</label>
+            <textarea id="goalDescription" placeholder="Describe your ideal outcome..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Target Timeline</label>
+            <select id="timeline">
+              <option value="">Select</option>
+              <option value="1-3">1-3 months</option>
+              <option value="3-6">3-6 months</option>
+              <option value="6-12">6-12 months</option>
+              <option value="12+">12+ months</option>
+              <option value="ongoing">Ongoing / Lifestyle</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>What has stopped you from achieving this previously?</label>
+            <textarea id="barriers" placeholder="Be honest — this helps us design around your obstacles."></textarea>
+          </div>
+          <div class="form-group">
+            <label>What have you already tried?</label>
+            <textarea id="triedBefore" placeholder="Previous programs, diets, coaches, apps..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>How committed are you to achieving this goal? (1-10)</label>
+            <div class="slider-container">
+              <input type="range" id="commitment" min="1" max="10" value="5" oninput="document.getElementById('commitmentValue').textContent = this.value">
+              <div class="slider-value" id="commitmentValue">5</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4: Lifestyle -->
+        <div class="assessment-step" data-step="3">
+          <h3>Lifestyle</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Occupation</label>
+              <input type="text" id="occupation" placeholder="Your profession">
+            </div>
+            <div class="form-group">
+              <label>Work Schedule</label>
+              <select id="workSchedule">
+                <option value="">Select</option>
+                <option value="9-5">Standard (9-5)</option>
+                <option value="shift">Shift Work</option>
+                <option value="flexible">Flexible</option>
+                <option value="irregular">Irregular</option>
+                <option value="student">Student</option>
+                <option value="unemployed">Not Currently Working</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Average Sleep Duration</label>
+              <select id="sleepDuration">
+                <option value="">Select</option>
+                <option value="<5">Less than 5 hours</option>
+                <option value="5-6">5-6 hours</option>
+                <option value="6-7">6-7 hours</option>
+                <option value="7-8">7-8 hours</option>
+                <option value="8+">8+ hours</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Sleep Quality</label>
+              <select id="sleepQuality">
+                <option value="">Select</option>
+                <option value="poor">Poor</option>
+                <option value="fair">Fair</option>
+                <option value="good">Good</option>
+                <option value="excellent">Excellent</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Stress Level</label>
+            <select id="stressLevel">
+              <option value="">Select</option>
+              <option value="low">Low</option>
+              <option value="moderate">Moderate</option>
+              <option value="high">High</option>
+              <option value="extreme">Extreme</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Training Frequency (days per week)</label>
+            <select id="trainingFrequency">
+              <option value="">Select</option>
+              <option value="0">0 (Not currently training)</option>
+              <option value="1-2">1-2 days</option>
+              <option value="3-4">3-4 days</option>
+              <option value="5-6">5-6 days</option>
+              <option value="7">7 days</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Travel Frequency</label>
+            <select id="travelFreq">
+              <option value="">Select</option>
+              <option value="rarely">Rarely</option>
+              <option value="monthly">Monthly</option>
+              <option value="weekly">Weekly</option>
+              <option value="frequently">Frequently</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Alcohol Consumption</label>
+              <select id="alcohol">
+                <option value="">Select</option>
+                <option value="none">None</option>
+                <option value="rarely">Rarely</option>
+                <option value="social">Social (1-2/week)</option>
+                <option value="moderate">Moderate (3-5/week)</option>
+                <option value="frequent">Frequent (daily)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Smoking / Nicotine</label>
+              <select id="smoking">
+                <option value="">Select</option>
+                <option value="no">No</option>
+                <option value="occasional">Occasional</option>
+                <option value="regular">Regular</option>
+                <option value="trying-quit">Trying to quit</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Current Exercise Routine <span class="optional">(optional)</span></label>
+            <textarea id="currentRoutine" placeholder="Describe what you're currently doing..."></textarea>
+          </div>
+        </div>
+
+        <!-- Step 5: Nutrition -->
+        <div class="assessment-step" data-step="4">
+          <h3>Nutrition</h3>
+          <div class="form-group">
+            <label>Diet Preference</label>
+            <div class="radio-group" id="dietPreference">
+              <label class="radio-item"><input type="radio" name="diet" value="vegetarian"><span>Vegetarian</span></label>
+              <label class="radio-item"><input type="radio" name="diet" value="vegan"><span>Vegan</span></label>
+              <label class="radio-item"><input type="radio" name="diet" value="eggetarian"><span>Eggetarian</span></label>
+              <label class="radio-item"><input type="radio" name="diet" value="non-vegetarian"><span>Non-Vegetarian</span></label>
+              <label class="radio-item"><input type="radio" name="diet" value="other"><span>Other</span></label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Food Allergies <span class="optional">(optional)</span></label>
+            <input type="text" id="allergies" placeholder="List any food allergies">
+          </div>
+          <div class="form-group">
+            <label>Food Intolerances <span class="optional">(optional)</span></label>
+            <input type="text" id="intolerances" placeholder="e.g. lactose, gluten">
+          </div>
+          <div class="form-group">
+            <label>Foods You Avoid <span class="optional">(optional)</span></label>
+            <input type="text" id="foodsAvoided" placeholder="Foods you don't eat">
+          </div>
+          <div class="form-group">
+            <label>Dietary Restrictions <span class="optional">(optional)</span></label>
+            <input type="text" id="restrictions" placeholder="Religious, medical, personal...">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Typical Meals Per Day</label>
+              <select id="mealsPerDay">
+                <option value="">Select</option>
+                <option value="1-2">1-2 meals</option>
+                <option value="3">3 meals</option>
+                <option value="4-5">4-5 meals</option>
+                <option value="6+">6+ meals</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Water Intake (litres/day)</label>
+              <select id="waterIntake">
+                <option value="">Select</option>
+                <option value="<1">Less than 1L</option>
+                <option value="1-2">1-2L</option>
+                <option value="2-3">2-3L</option>
+                <option value="3+">3L+</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Current Eating Pattern <span class="optional">(optional)</span></label>
+            <textarea id="eatingPattern" placeholder="Describe a typical day of eating..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Current Supplements <span class="optional">(optional)</span></label>
+            <input type="text" id="supplements" placeholder="Protein, creatine, vitamins, etc.">
+          </div>
+          <div class="form-group">
+            <label>Previous Diets Attempted <span class="optional">(optional)</span></label>
+            <textarea id="previousDiets" placeholder="Keto, intermittent fasting, calorie counting, etc."></textarea>
+          </div>
+        </div>
+
+        <!-- Step 6: Health -->
+        <div class="assessment-step" data-step="5">
+          <h3>Health & Safety</h3>
+          <div class="form-group">
+            <label>Do you currently have any injuries?</label>
+            <textarea id="injuries" placeholder="Describe any current injuries..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Do you have any medical conditions that may affect exercise or nutrition?</label>
+            <textarea id="medicalConditions" placeholder="Diabetes, hypertension, thyroid, etc."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Are you currently taking any medications?</label>
+            <textarea id="medications" placeholder="List current medications..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Do you have any exercise restrictions?</label>
+            <textarea id="exerciseRestrictions" placeholder="Movements to avoid, limitations..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Have you been advised by a healthcare professional to avoid certain activities?</label>
+            <textarea id="healthcareAdvice" placeholder="Details if applicable..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Emergency Contact <span class="optional">(optional)</span></label>
+            <input type="text" id="emergencyContact" placeholder="Name and phone number">
+          </div>
+          <div class="disclaimer">
+            <strong>Important:</strong> Please provide accurate information so your coaching plan can be appropriately considered.<br><br>
+            This assessment is not a medical diagnosis or emergency service. If you have a medical condition, injury or medication-related concern, consult an appropriately qualified healthcare professional.
+          </div>
+        </div>
+
+        <!-- Step 7: Service Selection -->
+        <div class="assessment-step" data-step="6">
+          <h3>Select Your Service</h3>
+          <h4>Which services are you interested in?</h4>
+          <div class="checkbox-group" id="serviceSelection">
+            <label class="checkbox-item"><input type="checkbox" value="personal-training"><span>Personal Training</span></label>
+            <label class="checkbox-item"><input type="checkbox" value="online-training"><span>Online Personal Training</span></label>
+            <label class="checkbox-item"><input type="checkbox" value="diet-consultation"><span>Diet Consultation</span></label>
+            <label class="checkbox-item"><input type="checkbox" value="contest-prep"><span>Contest Preparation</span></label>
+            <label class="checkbox-item"><input type="checkbox" value="transformation"><span>One-on-One Transformation</span></label>
+            <label class="checkbox-item"><input type="checkbox" value="hypnotherapy" id="hypnotherapyCheckbox"><span>Hypnotherapy</span></label>
+            <label class="checkbox-item"><input type="checkbox" value="lifestyle"><span>Lifestyle / Human Performance</span></label>
+          </div>
+          <div class="form-group" style="margin-top: 24px;">
+            <label>How would you prefer to work together?</label>
+            <div class="radio-group" id="workMode">
+              <label class="radio-item"><input type="radio" name="mode" value="in-person"><span>In Person</span></label>
+              <label class="radio-item"><input type="radio" name="mode" value="online"><span>Online</span></label>
+              <label class="radio-item"><input type="radio" name="mode" value="either"><span>Either</span></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 8: Hypnotherapy (Conditional) -->
+        <div class="assessment-step" data-step="7" id="hypnotherapyStep">
+          <h3>Hypnotherapy Assessment</h3>
+          <div class="form-group">
+            <label>What would you like to change?</label>
+            <textarea id="hypnoChange" placeholder="Describe what you want to change..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>If this change happened successfully, what would be different in your life?</label>
+            <textarea id="hypnoDifferent" placeholder="Imagine the change has already happened..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>How would you know that the change has happened?</label>
+            <textarea id="hypnoKnow" placeholder="What would you notice?"></textarea>
+          </div>
+          <div class="form-group">
+            <label>What would you see, hear or feel differently?</label>
+            <textarea id="hypnoSense" placeholder="Use your senses to describe the change..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>What has this issue been costing you?</label>
+            <textarea id="hypnoCost" placeholder="Time, energy, opportunities, relationships..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>What would become possible if this pattern was no longer controlling you?</label>
+            <textarea id="hypnoPossible" placeholder="What would you do, be, or have?"></textarea>
+          </div>
+          <div class="form-group">
+            <label>When did you first notice this pattern?</label>
+            <input type="text" id="hypnoWhen" placeholder="Approximate time or event">
+          </div>
+          <div class="form-group">
+            <label>Are there situations where this problem does not happen?</label>
+            <textarea id="hypnoExceptions" placeholder="When does it not occur?"></textarea>
+          </div>
+          <div class="form-group">
+            <label>What have you already tried?</label>
+            <textarea id="hypnoTried" placeholder="Previous approaches, therapies, methods..."></textarea>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>How important is this change? (1-10)</label>
+              <div class="slider-container">
+                <input type="range" id="hypnoImportance" min="1" max="10" value="5" oninput="document.getElementById('hypnoImportanceValue').textContent = this.value">
+                <div class="slider-value" id="hypnoImportanceValue">5</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>How confident are you that change is possible? (1-10)</label>
+              <div class="slider-container">
+                <input type="range" id="hypnoConfidence" min="1" max="10" value="5" oninput="document.getElementById('hypnoConfidenceValue').textContent = this.value">
+                <div class="slider-value" id="hypnoConfidenceValue">5</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Imagine it is six months from now and the change has happened. What is different?</label>
+            <textarea id="hypnoFuture" placeholder="Describe your life six months from now..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>What would you like to experience instead?</label>
+            <textarea id="hypnoInstead" placeholder="The positive alternative..."></textarea>
+          </div>
+          <div class="consent-box">
+            <label>
+              <input type="checkbox" id="hypnoConsent" required>
+              <span>I understand that hypnotherapy is not a substitute for emergency medical or psychiatric care.</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Step 9: Booking -->
+        <div class="assessment-step" data-step="8">
+          <h3>Book Your Consultation</h3>
+          <div class="assessment-summary">
+            <h4>Selected Service</h4>
+            <div class="assessment-summary-item">
+              <span class="key">Service</span>
+              <span class="value" id="summaryService">Not selected</span>
+            </div>
+            <div class="assessment-summary-item">
+              <span class="key">Mode</span>
+              <span class="value" id="summaryMode">Not selected</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Preferred Date</label>
+            <input type="date" id="preferredDate">
+          </div>
+          <div class="form-group">
+            <label>Preferred Time</label>
+            <select id="preferredTime">
+              <option value="">Select</option>
+              <option value="morning">Morning (6AM - 10AM)</option>
+              <option value="midday">Midday (10AM - 2PM)</option>
+              <option value="afternoon">Afternoon (2PM - 6PM)</option>
+              <option value="evening">Evening (6PM - 9PM)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Consultation Type</label>
+            <select id="consultationType">
+              <option value="">Select</option>
+              <option value="video">Video Call</option>
+              <option value="phone">Phone Call</option>
+              <option value="in-person">In Person</option>
+              <option value="whatsapp">WhatsApp Call</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Additional Notes <span class="optional">(optional)</span></label>
+            <textarea id="bookingNotes" placeholder="Anything else Kunaal should know..."></textarea>
+          </div>
+        </div>
+
+        <!-- Step 10: Payment -->
+        <div class="assessment-step" data-step="9">
+          <h3>Secure Your Session</h3>
+          <div class="payment-qr">
+            <img src="qr-code.png" alt="UPI QR Code" id="qrCodeImg" onerror="this.style.display='none'; document.getElementById('qrFallback').style.display='block';">
+            <div id="qrFallback" style="display:none; padding: 40px; color: var(--text-muted);">
+              <p>QR Code image not found.</p>
+              <p>Please add <code>qr-code.png</code> to your project folder.</p>
+            </div>
+            <p>Scan with any UPI app</p>
+            <div class="upi-id">kunal.wachanekar-4@okicici</div>
+            <div class="payment-buttons">
+              <a href="upi://pay?pa=kunal.wachanekar-4@okicici&pn=Kunaal%20Wachanekar" class="btn btn-primary">Pay with UPI</a>
+              <a href="upi://pay?pa=kunal.wachanekar-4@okicici&pn=Kunaal%20Wachanekar" class="btn btn-outline">Pay with Google Pay</a>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Transaction ID / UTR Number <span class="optional">(optional)</span></label>
+            <input type="text" id="transactionId" placeholder="Enter after payment">
+          </div>
+          <div class="form-group">
+            <label>Amount Paid <span class="optional">(optional)</span></label>
+            <input type="text" id="amountPaid" placeholder="e.g. 5000">
+          </div>
+          <p style="text-align: center; color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 16px;">
+            Payment completed? Send your confirmation to Kunaal.
+          </p>
+          <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+            <button class="btn btn-whatsapp" onclick="submitPaymentConfirmation()">Submit Payment Confirmation</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="assessment-footer" id="assessmentFooter">
+        <button class="btn btn-secondary" id="prevBtn" onclick="prevStep()" style="display:none;">Back</button>
+        <button class="btn btn-primary" id="nextBtn" onclick="nextStep()">Continue</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <span class="label">Get In Touch</span>
+    <h2 class="section-title" style="text-align: center;">Contact <span class="text-gradient">Kunaal</span></h2>
+    <p class="section-subtitle" style="text-align: center; margin: 0 auto 48px;">Ready to start your transformation? Reach out directly.</p>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-card-icon">&#x1F4AC;</div>
+        <h3>WhatsApp</h3>
+        <p>Fastest way to get in touch. Chat directly with Kunaal.</p>
+        <a href="https://wa.me/919011101654" target="_blank" class="btn btn-whatsapp" style="width: 100%;">Chat on WhatsApp</a>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon">&#x2709;&#xFE0F;</div>
+        <h3>Email</h3>
+        <p>Send detailed inquiries or your assessment summary.</p>
+        <a href="mailto:kunaalextraedge@gmail.com" class="btn btn-outline" style="width: 100%;">Email Kunaal</a>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon">&#x1F4F1;</div>
+        <h3>Instagram</h3>
+        <p>Follow the journey and see real transformations.</p>
+        <a href="https://www.instagram.com/kunaal_thechamp/" target="_blank" class="btn btn-secondary" style="width: 100%;">Follow @kunaal_thechamp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>KUNAAL<span style="color: var(--accent-primary);">.</span></h3>
+        <p>Human Performance & Transformation Coach. Pioneering Human Evolution through science, biology, and behavioural change.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#method">Method</a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#services">Physique Transformation</a>
+        <a href="#services">Strength & Conditioning</a>
+        <a href="#services">Nutrition</a>
+        <a href="#services">Hypnotherapy</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="https://wa.me/919011101654" target="_blank">WhatsApp</a>
+        <a href="mailto:kunaalextraedge@gmail.com">Email</a>
+        <a href="https://www.instagram.com/kunaal_thechamp/" target="_blank">Instagram</a>
+        <a href="#assessment">Start Assessment</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Kunaal Wachanekar. All rights reserved.</p>
+      <p style="color: var(--text-muted); font-size: 0.75rem;">This website does not provide medical advice. Consult a healthcare professional for medical concerns.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Service Modal -->
+<div class="modal-overlay" id="serviceModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h3 id="modalTitle">Service Details</h3>
+      <button class="modal-close" onclick="closeServiceModal()">&times;</button>
+    </div>
+    <div class="modal-body" id="modalBody">
+      <!-- Dynamic content -->
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-secondary" onclick="closeServiceModal()">Close</button>
+      <a href="#assessment" class="btn btn-primary" onclick="closeServiceModal(); selectServiceFromModal();">Book Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
