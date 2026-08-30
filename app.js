@@ -469,8 +469,8 @@ function AboutSection() {
           e("div", { className: "about-photo-ring-2" }),
           e("div", { className: "about-photo-frame" },
             e("div", { className: "about-photo-placeholder" },
-              e("div", { className: "icon" }, "📷"),
-              e("p", null, "Your Photo Here"),
+              e("img", { src: "your-photo.jpg", alt: "Kunaal Wachanekar", style: { width: "100%", height: "100%", objectFit: "cover" } })
+
               e("p", { style: { fontSize: "0.75rem", marginTop: "4px" } }, "Replace with your image")
             )
           )
